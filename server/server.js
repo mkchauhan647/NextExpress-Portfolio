@@ -5,9 +5,8 @@ const userRouter = require('./routes/user');
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
-
+import style from 'styled-jsx/style'
 const server = express();
-
 
 nextApp.prepare().then(() => {
 
