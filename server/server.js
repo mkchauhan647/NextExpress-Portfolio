@@ -6,16 +6,19 @@ const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
+const server = express();
 
 
 
 nextApp.prepare().then(() => {
-    const server = express();
 
     server.set('view engine', 'ejs');
 
-    server.use('/user', userRouter);
+    server.use('/api/user', userRouter);
 
+    server.get('/test', (req, res) => {
+        res.send('Hello World test');
+    });
 
     server.get('/ejstest', (req, res) => {
         res.render('test', { name: 'Express' });
@@ -33,8 +36,10 @@ nextApp.prepare().then(() => {
         return handle(req, res);
     });
 
-    server.listen(3000, (err) => {
-        if (err) throw err;
-        console.log('> Ready on http://localhost:3000');
-    });
+    // server.listen(3000, (err) => {
+    //     if (err) throw err;
+    //     console.log('> Ready on http://localhost:3000');
+    // });
 });
+
+module.exports = server
