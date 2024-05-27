@@ -11,7 +11,7 @@ const server = express();
 
 nextApp.prepare().then(() => {
 
-    server.set('view engine', 'ejs');
+    // server.set('view engine', 'ejs');
 
     server.use('/api/user', userRouter);
 
@@ -19,9 +19,9 @@ nextApp.prepare().then(() => {
         res.send('Hello World test');
     });
 
-    server.get('/ejstest', (req, res) => {
-        res.render('test', { name: 'Express' });
-    });
+    // server.get('/ejstest', (req, res) => {
+        // res.render('test', { name: 'Express' });
+    // });
     
     server.get('/te', (req, res) => {
         res.download('server/server.js');
