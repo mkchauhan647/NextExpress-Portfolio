@@ -2,6 +2,7 @@ const express = require('express');
 // const next = require('next');
 // const routes = require('./routes');
 const userRouter = require('./routes/user');
+const repoRouter = require('./routes/repo')
 const dev = process.env.NODE_ENV !== 'production';
 // const nextApp = next({ dev });
 // const handle = nextApp.getRequestHandler();
@@ -15,12 +16,16 @@ server.get('/test', (req, res) => {
 });
 
 server.use('/api/user', userRouter);
-
+server.use('/repo', repoRouter);
 server.get('/', (req, res) => {
     res.send('Hello World HOme page');
 });
 
 
+
+// server.listen(5000, () => {
+//     console.log("Server is listening at 3000 port.")
+// })
 
 module.exports = server
 
