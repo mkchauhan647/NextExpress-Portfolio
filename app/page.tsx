@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 async function fetchDatas() {
   
-  const delay = duration => new Promise(resolve => setTimeout(resolve, duration));
+  const delay = (duration:any)  => new Promise(resolve => setTimeout(resolve, duration));
     await delay(1000);
     // return;
     
