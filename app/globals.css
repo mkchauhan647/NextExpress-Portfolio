@@ -34,3 +34,80 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@layer components{
+
+  .input-container input {
+    @apply border border-blue-500 ;
+  }
+
+  .btn{
+    @apply border border-slate-300 p-2 m-2 shadow-md ;
+  }
+}
+
+
+@layer components {
+  .animation-test {
+    @apply transition-all duration-1000 hover:scale-110
+  }
+}
+@layer components {
+  .loading-animation {
+    animation-name: loading-anime;
+    background-color: cyan;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite; /* To keep the animation running continuously */
+    border-radius: 50%; /* To make the element circular like a bubble */
+    width: 13px; /* Adjust as needed */
+    height: 13px; /* Adjust as needed */
+    /* animation-fill-mode:backwards; */
+  }
+  .loading-animation::after{
+    content: '...';
+
+  }
+  @keyframes loading-anime {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out;
+}
+
+
+

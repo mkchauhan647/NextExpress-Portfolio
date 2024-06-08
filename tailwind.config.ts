@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: '1rem',
+      padding: {
+        DEFAULT: '1rem',
+        'md': '4rem',
+      },
     },
     extend: {
       backgroundImage: {

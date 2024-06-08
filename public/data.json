@@ -2,18 +2,41 @@
   {
     "description":"This is Nepali speech recongition model trained using deep neural networks.",
     "name":"Nepali Speech Recogntion (ASR) - Automatic Speech Recognition",
-    "image_url":"speech.png"
+    "image_url":"speech.png",
+    "languages":["Python","JavaScript","TypeScript"],
+    "frameworks":["NextJS","Express"],
+    "libraries":["Tensorflow","ReactJs"],
+    "database":["MongoDB"],
+    "others":["Git","Google Colab","Kaggle Notebook"],
+    "info":["Python","JavaScript","TypeScript","NextJS","Express","Tensorflow","ReactJs","MongoDB","Git","Google Colab","Kaggle Notebook"],
+    "vercel_url":"/",
+    "repo_url":"https://github.com/mkchauhan647/Nepali-Speech-Recognition"
   },
     {"vercel_url":"https://fund-raiser-ashy.vercel.app/",
     "description":"I developed a Fundraiser Recommendation Website designed to connect passionate donors with impactful causes using a stack of modern web technologies. The front end is built with React.js and Next.js to provide a fast, responsive, and dynamic user experience. The backend is powered by Node.js and Express.js, ensuring robust and efficient handling of user requests and data management. The application leverages Vercel for seamless deployment and continuous integration, ensuring high availability and scalability. Additionally, I utilized GitHub for version control and collaborative development, ensuring a streamlined development process and efficient code management.",
     "image_url":"fundraiser.png",
-    "repo_url":"",
-    "name":"Fundraiser Recomnedation"
+    "repo_url":"https://github.com/aashish-cd/fund-raiser",
+    "name":"Fundraiser Recomnedation",
+    "languages":["JavaScript","TypeScript"],
+    "frameworks":["NextJS","Express"],
+    "libraries":["ReactJs","TensorflowJS"],
+    "database":["Firebase"],
+    "others":["Git","Collborative Filtering"],
+    "info":["NodeJS","JavaScript","TypeScript","NextJS","Express","TensorflowJs","ReactJs","Firebase","Git","Collaborative Filtering"]
+
+
 },
     {"vercel_url":"https://frontendintern-mkchauhan647.vercel.app/",
       "description":"I created an Online E-commerce Website that delivers a seamless and enjoyable shopping experience using cutting-edge web technologies. The front end is implemented with React.js and Next.js, providing a highly interactive and fast-loading interface. The backend, built with Node.js and Express.js, efficiently manages user data, product information, and transactions. The website is deployed on Vercel, ensuring smooth deployment processes and scalability. GitHub was used for version control, facilitating team collaboration and maintaining code quality. This technology stack ensures that the e-commerce platform is robust, scalable, and capable of handling high traffic while offering a superior user experience.",
     "image_url":"ecommerce.png",
-    "repo_url":"",
-    "name":"Online Ecommerce Website"
+    "repo_url":"https://github.com/mkchauhan647/frontend-assignment",
+    "name":"Online Ecommerce Website",
+    "languages":["JavaScript","TypeScript"],
+    "frameworks":["NextJS","Express"],
+    "libraries":["ReactJs"],
+    "database":["MongoDB"],
+    "others":["Git","Rest API","Fake Rest API"],
+    "info":["NodeJS","JavaScript","TypeScript","NextJS","Express","ReactJs","MongoDB","Git","Fake Rest API"]
+
 }
 ]
